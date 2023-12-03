@@ -1,9 +1,10 @@
 const { parseArgs, execSolution } = require('./util');
 const args = process.argv;
 
-function run() {
+async function run() {
     const solution = parseArgs(args);
-    execSolution(solution);
+    const result = await execSolution(solution);
+
 }
 
 run();
