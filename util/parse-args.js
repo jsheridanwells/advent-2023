@@ -2,7 +2,7 @@ const noSolutionMessage = 'Please include the name of the solution, e.g. npm sta
 const incorrectSolutionNameMessage = 'Please specify a solution name beginning with day-*';
 
 function isCorrectSolutionName(name) {
-    return !!(name.match(/day-1/));
+    return !!(name.match(/day-/));
 }
 
 function parseArgs(inputArgs) {

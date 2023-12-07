@@ -3,8 +3,7 @@ const args = process.argv;
 
 async function run() {
     const solution = parseArgs(args);
-    const result = await execSolution(solution);
-
+    await execSolution(solution);
 }
 
 run();
