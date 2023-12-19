@@ -1,12 +1,13 @@
-const readInputLines = require('../util/read-input-lines');
-const runDayThree = require('./run-day-3');
 
-const solutionName = 'Day Three';
+const readInputLines = require('../util/read-input-lines');
+const runDay4 = require('./run-day-4');
+
+const solutionName = 'Day Four';
 
 async function main() {
     try {
-        readInputLines('day-3').then(input => {
-            const result = runDayThree(input);
+        readInputLines('day-4').then(input => {
+            const result = runDay4(input);
             if (result) {
                 console.log(`The answer to ${solutionName} is :::: ${result}`);
                 return;
@@ -15,7 +16,7 @@ async function main() {
         })
     }
     catch (err) {
-        throw new Error('Error executing the Day Three solution', err);
+        throw new Error('Error executing the Day Four solution', err);
     }
 }
 
