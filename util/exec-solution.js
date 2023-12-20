@@ -51,7 +51,7 @@ async function execSolution(directoryPath) {
         throw new Error(`Could not find valid solution in ${absPath}`);
     }
     catch (err) {
-        console.error('Error importing and running index.js file:', e);
+        console.error('Error importing and running index.js file:', err);
     }
 }
 

@@ -1,4 +1,5 @@
 const parseArgs = require('./parse-args').parseArgs;
 const execSolution = require('./exec-solution');
 const readInputLines = require('./read-input-lines');
-module.exports = { parseArgs, execSolution, readInputLines };
+const printToConsole = require('./print-to-console');
+module.exports = { parseArgs, execSolution, readInputLines, printToConsole };
